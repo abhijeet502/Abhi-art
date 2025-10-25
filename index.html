@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-Controlled Virtual Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="ui-overlay">
+            <h1>Virtual Art Gallery</h1>
+            <p>Speak commands like "Go to room 1" or explore Easter eggs!</p>
+            <input type="text" id="voice-fallback" placeholder="Or type a command here">
+            <div id="art-info" class="hidden">
+                <h2 id="art-title">Art Title</h2>
+                <p id="art-desc">Description</p>
+                <button id="close-btn">Close</button>
+            </div>
+        </div>
+        <canvas id="three-canvas"></canvas>
+        <footer id="footer">Crafted with 💖 by Abhi</footer>
+    </div>
+    <script src="three-gallery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
